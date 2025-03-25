@@ -3,173 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration form</title>
-    <style>
-
-* {
-    box-sizing: border-box;
-   margin: 15px;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  
-}
-
-fieldset {
-    width: 60%;
-    border-radius: 15px 15px;
-    background-color: rgb(255, 246, 192);
-    position: absolute;
-    left: 20%;
-}
-
-h1 {
-    border-bottom: 2px solid brown;
-    display: inline;
-    padding-bottom: 2px;
-}
-
-
-
-td {padding:0 20px}
-
-td input {
-    border-style: groove;
-    padding: 10px;
-    border-radius: 8px;
-    border-color: rgb(255, 246, 192);
-    background-color: rgb(255, 246, 192);
-}
-
-footer input {
-    background-color: orange;
-    border: none;
-  color: white;
-  padding: 16px 32px;
-  text-decoration: none;
-  margin: 4px 2px;
-  cursor: pointer;
-    font-family: sans-serif;
-    font-size: 20px;
-    border-radius: 25px 25px;
-    width: 50%;
-    position: relative;
-    left: 20%;
-  
-}
-
- </style>
+    <title>My portfolio</title>
+  <link rel="stylesheet" href="css/project.css">
 </head>
-<<<<<<< HEAD
-
-<body style="background-color: rgb(84, 255, 198);">
-    <form action="GET">
-        <fieldset>
-
-    <header>
-        <h1>Registration</h1>
-
-
-    </header>
-
-
-    <article> 
-        
-        <h2>Personal Details</h2>
-
-        <table>
-
-
-<tr>
-    <td><label>Full Name</label></td>
-    <td><label>Father Name</label></td>
-    <td> <label>Mother Name</label></td>
-</tr>
-         <tr>
-                <td><input type="text" name="full_name" placeholder="Enter your name"></td>
-              <td><input type="text" name="father_name" placeholder="Enter father name"></td>
-              <td><input type="text" name="mother_name" placeholder="Enter mother name"></td>
-           </tr>
-
-<tr>
-    <td><label>Date of Birth</label></td>
-    <td><label>Full name</label></td>
-    <td><label>Email</label></td>
-</tr>
-
-        <tr>
-               <td><input type="date" name="birth_date" placeholder="Enter your DOB"></td>
-                <td><input type="text" name="full_name" placeholder="Enter your Full Name"></td>
-                <td><input type="email" name="email" placeholder="Enter your Email"></td>  
-            </tr>
-
-            <tr>
-                <td><label>Mobile Number</label></td>
-                <td><label>Gender</label></td>
-                <td><label>Address</label></td>
-            </tr>
-            <tr>
-            <td><input type="text" name="mobile_number" placeholder="Enter mobile number"></td>
-            <td><input type="text" name="gender" placeholder="Enter your gender"></td>
-            <td><input type="address" name="address" placeholder="Enter your Address"></td>  
-            </tr>
-        </table>
-
-        </article> 
-        <hr>
-
-        <article>
-            <h2>Other Details</h2>
-
-            <table>
-
-                <tr>
-                    <td><label>Stream</label></td>
-                    <td><label>Previous Class</label></td>
-                    <td><label>Hobbies</label></td>
-                </tr>
-
-                <tr>
-                <td><input type="text" name="stream" placeholder="Enter your stream"></td>
-                 <td><input type="text" name="previous class" placeholder="Enter previous class"></td>
-                  <td><input type="text" name="hobbies" placeholder="Enter your hobbies"></td>
-                </tr>
-
-                <tr>
-                    <td><label>Account Number</label></td>
-                    <td><label>Religion</label></td>
-                    <td><label>Category</label></td>
-                </tr>
-                <tr>
-                   <td><input type="number" name="account_number" placeholder="Enter account number"></td>
-                 <td><input type="text" name="religion" placeholder="Enter your religion"></td>
-                <td><input type="text" name="category" placeholder="Enter your category"></td>
-            </tr>
-            </table>
-        </article>
-
-        
-              <footer> 
-        <input type="Submit" >
-    </footer> 
-        
-
-</fieldset>
-</form>  
-=======
 <body>
-    <h1>Welcome to My Web Page</h1>
-    <p>This is a sample HTML page with basic styling.</p>
-< IDD254
-    <p>Hi, I’m <strong>Farhan</strong>, a passionate <em>[Your Profession]</em>.  
-        I specialize in <em>[Your Key Skills]</em>, helping businesses and individuals create impactful digital experiences.</p>
-=======
-    <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
-    </ul>
-> Stella-wach
->>>>>>> 4d12f93b8eb2dc7706efec962ee62a76b0f45d4a
+<div class="container">
+
+    <section id="home">
+    
+    <div class="nav">
+        <nav>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT ME</a></li>
+                <li><a href="#gallery">GALLERY</a></li>
+               <li><a href="#contact">CONTACT ME</a></li>
+               
+            </ul>
+        </nav>
+   
+    </div>
+   
+        <div class="left">
+        <p>HELLO</p> 
+        <hr class="customline">
+        
+        <h1>I AM LEBRON JAMES.</h1>
+        <img src="Images/Lebron james.png" alt="Lebron" height="400px">
+
+        <h3>PROFFESIONAL BASKETBALL PLAYER</h3>
+ </div>
+ 
+
+    <div class="input">
+    <input type="submit" value="GET CV"> 
+    <input type="submit" value="MEET ME"> 
+</div>
+
+</section>
+
+<section id="about">
+    
+    <fieldset>
+        <h1>ABOUT ME.</h1>
+       
+    
+        <div class="image1">
+    <img src="Images/Jameslakers.jpg" alt="Lebron" height="450px" width="450px">
+</div>
+    <p>LeBron Raymone James Sr. (/ləbrɒn/;[1] lə-BRON; born December 30, 1984) is an American professional basketball player for the Los Angeles Lakers of the National Basketball Association (NBA). Nicknamed "King James", he is widely recognized as one of the greatest players in the sport's history and is often compared with Michael Jordan in debates on the greatest basketball player of all time.[a] James has won four NBA championships from 10 NBA Finals appearances, having made eight consecutive appearances between 2011 and 2018.[2] He also won the inaugural NBA Cup in 2023 with the Lakers and three Olympic gold medals as a member of the U.S. national team.
+    In addition to being the NBA's all-time leading scorer and ranking fourth in career assists, James holds several individual honors: four Most Valuable Player (MVP) Awards, four Finals MVP Awards, three All-Star Game MVP Awards, and the inaugural NBA Cup MVP award.</p>
+
+        <div class="image2">
+    <a href="https://www.instagram.com/kingjames/"><img src="Images/Instagram.webp" alt="instagram" width="30px" height="20px"></a>
+    <a href="https://www.facebook.com/LeBron/"><img src="Images/Facebook.jpg" alt="Facebook" width="30px" height="20px"></a>
+    <a href="https://x.com/KingJames?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="Images/Twitter.jpg" alt="Twitter" width="30px" height="20pxp"></a>
+    <a href="https://www.linkedin.com/in/lebron-james-5b94b5334?trk=people-guest_people_search-card"><img src="Images/Linkedinn.jpg" alt="Linkedinn" width="30px" height="20px"></a>
+</div>
+</fieldset>
+</section> 
+
+<section id="gallery">
+
+    <div class="topic">
+        <h1>GALLERY</h1>
+    </div>
+
+
+    <div class="video">
+        <video width="100%" height="500px" loop autoplay muted>
+            <source src="Images/basketballvideo.mp4" type="video/mp4">
+        </video>
+
+</section>
+
+<section id="contact">
+   
+ <div class="left1">
+    <h2>CONTACT ME</h2>
+   
+            
+           <p> <b>Address:</b> 123 Lebron James,Tokyo,Japan</p>
+           <p><b>Email:</b> <a href="">support@james.com</a></p>
+           <p> <b>Phone:</b> <a href="">+1 234 567 890</a></p>
+          
+           <a href="https://www.instagram.com/"><img src="Images/Instagram.webp" alt="instagram" width="30px" height="20px"></a>
+          <a href="https://web.facebook.com/?_rdc=1&_rdr"><img src="Images/Facebook.jpg" alt="Facebook" width="30px" height="20px"></a>
+          <a href="https://x.com/?lang=en"><img src="Images/Twitter.jpg" alt="Twitter" width="30px" height="20pxp"></a>
+          <a href="https://ke.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F"><img src="Images/Linkedinn.jpg" alt="Linkedinn" width="30px" height="20px"></a>
+        </div>
+
+        <div class="right">
+            
+            <form action="GET">
+                
+                <table>
+                    <h2>SEND ME A MESSAGE</h2>
+                    <tr><td>Full name</td></tr>
+                    <tr><td><input type="text" name="text" placeholder="Enter Full name"></td></tr>
+                    <tr><td>Email</td></tr>
+                    <tr><td><input type="email" name="email" placeholder="Enter Email"></td></tr>
+                    <tr><td>Subject</td></tr>
+                    <tr><td><input type="text" name="text" placeholder="Subject"></td></tr>
+                    <tr><td>Message</td></tr>
+                   <tr><td><textarea name="message" id="msg">Your message</textarea></td></tr> 
+
+                  </table>
+
+                  <div class="submit">
+                  <input type="submit" value="submit"> 
+                </div>
+            </form>
+        
+
+</section>
+
+<footer class="footer">
+    <p>&copy; 2024 LeBron James. All Rights Reserved.</p>
+   
+  </footer>
+</div>
+
 </body>
 </html>

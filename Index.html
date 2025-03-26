@@ -297,16 +297,133 @@ html{
          
       }
     
-      .footer {
-        background-color: #333; 
-        color: white; 
-        text-align: center; 
-        padding: 20px 0; 
-        width: 100%;
-        margin-top: 20px;
+     .lebron-footer {
+            background: linear-gradient(135deg, #552583 0%, #FDB927 100%);
+            color: white;
+            padding: 30px 0;
+            font-family: 'Arial', sans-serif;
+            border-top: 3px solid #FDB927;
+        }
         
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
         
-      }    
+        .footer-logo {
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .footer-logo h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .footer-logo h3 span {
+            color: #FDB927;
+        }
+        
+        .footer-logo p {
+            font-size: 14px;
+            line-height: 1.5;
+            opacity: 0.8;
+        }
+        
+        .footer-links {
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .footer-links h4 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #FDB927;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-links li {
+            margin-bottom: 8px;
+        }
+        
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: #FDB927;
+        }
+        
+        .footer-social {
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .footer-social h4 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #FDB927;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .social-icons a {
+            color: white;
+            background-color: rgba(255, 255, 255, 0.1);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+        }
+        
+        .social-icons a:hover {
+            background-color: #FDB927;
+            transform: translateY(-3px);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            margin-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            width: 100%;
+        }
+        
+        .footer-bottom p {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+        
+        .jersey-number {
+            font-weight: bold;
+            color: #FDB927;
+            font-size: 1.2em;
+        }
+        
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+                gap: 30px;
+            }
+        }
 </style>
 </head>
 <body>

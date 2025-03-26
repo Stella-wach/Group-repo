@@ -5,6 +5,309 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My portfolio</title>
   <link rel="stylesheet" href="css/project.css">
+    <style>
+html{
+    scroll-behavior:smooth;
+        
+    }
+    
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    
+    }
+    
+    body {
+        background-color: rgb(247, 247, 247);
+    }
+    
+    .container {
+      font-family: sans-serif;
+      width: 100%;
+      margin: 0 auto;
+      /* margin: 10px; */
+      
+    }
+    
+    .customline {
+        position: absolute;
+        left: 15%;
+        bottom: 67%;
+        border-top: solid 3px;
+        width: 29%;
+    }
+    
+    /* header {
+        margin-left: 50px;
+        width: 20%;
+       position: relative; 
+       top: 20px;
+    } */
+      
+    
+     /* .custom-hr {
+        border: none;
+        border-top: 3px solid #333;
+        margin: 20px;
+        width: 28%;
+        position: absolute;
+        top: 216px;
+        left: 196px;
+     } */
+    
+    
+     nav {
+       
+         /* background-color: #333; */
+        text-align: center;
+        width: 100%;
+        padding: 20px;
+        position: fixed;
+        z-index: 1000;
+    }
+    .nav li {
+        display: inline; 
+         margin-left: 40px;
+         margin: 18px; 
+    }
+    .nav ul li a {
+       text-decoration: none;
+       color: #000;
+      
+      
+    }
+    .nav ul li a:hover {
+        font-size: 20px;
+        color: rgb(216, 164, 53);
+    }
+    
+    #home {
+        
+        padding: 20px;
+    }
+    
+    .left p,h1 {
+        position: relative;
+        left: 65px;
+        top: 180px;
+        margin-bottom: 50px;
+    }
+    
+    .left p {
+        /* background-color: brown; */
+        font-size: 37px;
+        /* padding: 1px; */
+        width: 30%;
+        margin-bottom: 40px;
+        position: relative;
+    
+        
+    }
+    
+    
+    .left h1 {
+        /* background-color: blue; */
+        width: 60%;
+        font-size: 63px;
+        
+    }
+    
+    .left h3 {
+        position: relative;
+        bottom: 230px;
+        margin-left: 64px;
+    }  
+    
+    
+    .left img {
+        position: relative;
+       left: 800px;
+       bottom: 80px; 
+    }
+    
+    .input {
+     position: absolute;
+     bottom: 170px;
+     margin-left: 66px;
+    }
+    
+    .input input {
+        text-decoration: none;
+        padding: 9px;
+        width: 100px;
+        color: white;
+        background-color: brown;
+        font-size: 17px;
+        border-radius: 10px 10px;
+    }
+    
+    fieldset {
+        border-radius: 10px 10px 10px 10px;
+        background-color: rgb(241, 241, 237);
+    }
+    
+    #about {
+        margin: 70px;
+     
+    }
+    
+    
+    .line {
+        border: none;
+        border-top: 6px solid #000;
+        border-radius: 30%;
+         width: 5%;
+        position: absolute;
+        right: 656px;
+        margin-top: 13px;
+    }
+    
+    #about h1 {
+        position: relative;
+        top: 9px;
+        margin: 0;
+        text-align: center;
+       
+    }
+    
+    
+    
+    #about p{
+    margin: 40px;
+    margin-top: 130px;
+    width: 48%;
+    font-size: 20px;
+    }
+    
+    .image1 {
+     position: absolute; 
+     right: 200px;
+     top: 800px;
+     /* border: solid; */
+     /* background-color: #272727; */
+     
+     
+    }
+    
+    .image1 img {
+        border-radius: 20%;
+    }
+    
+    .image2 {
+        margin-left: 40px;
+    }
+    
+    #business {
+        position: relative;
+        bottom: 120px;
+        margin: 0;
+        text-align: center;
+    }
+    
+    #contact {
+    
+        margin-top: 90px;
+        position: relative;
+        left: 100px;
+        /* background-color: red; */ 
+        width: 70%;
+    }
+    
+    .left1 {
+        float: left; 
+       
+         
+      }
+      .left1 h2 {
+          margin-bottom: 2px;
+          color: blue;
+          font-size: 24px;
+          
+      }
+    
+      .left1 p {
+        position: relative;
+        top: 19px;
+        margin: 4px;
+        padding-bottom: 5px;
+        font-size: 20px;
+      }
+    
+      .left1 img {
+          padding: 10px;
+      }
+    
+      #gallery video {
+        object-fit: cover;
+        opacity: 0.9;
+      }
+    
+       .topic {
+         position: relative;
+        bottom: 170px;
+        left: 300px;
+       text-align: center;
+        /* background-color: blue; */
+        width: 50%;
+       
+      }
+    
+      .right {
+         position: relative;
+         left: 270px;
+         bottom: 3px;
+         font-size: 20px;
+       }
+    
+      table input,textarea {
+          padding: 10px;
+         border-radius: 10px;
+          width: 250px;
+         }
+    
+      table td {
+          padding-bottom: 10px;
+      }
+    
+      .right h2 {
+        margin-bottom: 20px;  
+        color:blue;
+        font-size: 20px;
+        text-decoration: underline;
+        
+      }
+    
+      .submit {
+        position: absolute;
+        left: 670px;
+        bottom:10px;
+      
+     
+      }
+    
+      .submit input {
+          text-decoration: none;
+          padding: 9px;
+          width: 100px;
+          color: white;
+          background-color: brown;
+          font-size: 17px;
+          border-radius: 10px 10px;
+         
+      }
+    
+      .footer {
+        background-color: #333; 
+        color: white; 
+        text-align: center; 
+        padding: 20px 0; 
+        width: 100%;
+        margin-top: 20px;
+        
+        
+      }    
+</style>
 </head>
 <body>
 <div class="container">

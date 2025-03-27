@@ -3,23 +3,431 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page</title>
+    <title>My portfolio</title>
+ 
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 20px;
-            background-color: #f4f4f4;
+html{
+    scroll-behavior:smooth;
+        
+    }
+    
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    
+    }
+    
+    body {
+        background-color: rgb(247, 247, 247);
+    }
+    
+    .container {
+      font-family: sans-serif;
+      width: 100%;
+      margin: 0 auto;
+      /* margin: 10px; */
+      
+    }
+    
+    .customline {
+        position: absolute;
+        left: 15%;
+        bottom: 67%;
+        border-top: solid 3px;
+        width: 29%;
+    }
+    
+    /* header {
+        margin-left: 50px;
+        width: 20%;
+       position: relative; 
+       top: 20px;
+    } */
+      
+    
+     /* .custom-hr {
+        border: none;
+        border-top: 3px solid #333;
+        margin: 20px;
+        width: 28%;
+        position: absolute;
+        top: 216px;
+        left: 196px;
+     } */
+    
+    
+     nav {
+       
+         /* background-color: #333; */
+        text-align: center;
+        width: 100%;
+        padding: 20px;
+        position: fixed;
+        z-index: 1000;
+    }
+    .nav li {
+        display: inline; 
+         margin-left: 40px;
+         margin: 18px; 
+    }
+    .nav ul li a {
+       text-decoration: none;
+       color: #000;
+      
+      
+    }
+    .nav ul li a:hover {
+        font-size: 20px;
+        color: rgb(216, 164, 53);
+    }
+    
+    #home {
+        
+        padding: 20px;
+    }
+    
+    .left p,h1 {
+        position: relative;
+        left: 65px;
+        top: 180px;
+        margin-bottom: 50px;
+    }
+    
+    .left p {
+        /* background-color: brown; */
+        font-size: 37px;
+        /* padding: 1px; */
+        width: 30%;
+        margin-bottom: 40px;
+        position: relative;
+    
+        
+    }
+    
+    
+    .left h1 {
+        /* background-color: blue; */
+        width: 60%;
+        font-size: 63px;
+        
+    }
+    
+    .left h3 {
+        position: relative;
+        bottom: 230px;
+        margin-left: 64px;
+    }  
+    
+    
+    .left img {
+        position: relative;
+       left: 800px;
+       bottom: 80px; 
+    }
+    
+    .input {
+     position: absolute;
+     bottom: 170px;
+     margin-left: 66px;
+    }
+    
+    .input input {
+        text-decoration: none;
+        padding: 9px;
+        width: 100px;
+        color: white;
+        background-color: brown;
+        font-size: 17px;
+        border-radius: 10px 10px;
+    }
+    
+    fieldset {
+        border-radius: 10px 10px 10px 10px;
+        background-color: rgb(241, 241, 237);
+    }
+    
+    #about {
+        margin: 70px;
+     
+    }
+    
+    
+    .line {
+        border: none;
+        border-top: 6px solid #000;
+        border-radius: 30%;
+         width: 5%;
+        position: absolute;
+        right: 656px;
+        margin-top: 13px;
+    }
+    
+    #about h1 {
+        position: relative;
+        top: 9px;
+        margin: 0;
+        text-align: center;
+       
+    }
+    
+    
+    
+    #about p{
+    margin: 40px;
+    margin-top: 130px;
+    width: 48%;
+    font-size: 20px;
+    }
+    
+    .image1 {
+     position: absolute; 
+     right: 200px;
+     top: 800px;
+     /* border: solid; */
+     /* background-color: #272727; */
+     
+     
+    }
+    
+    .image1 img {
+        border-radius: 20%;
+    }
+    
+    .image2 {
+        margin-left: 40px;
+    }
+    
+    #business {
+        position: relative;
+        bottom: 120px;
+        margin: 0;
+        text-align: center;
+    }
+    
+    #contact {
+    
+        margin-top: 90px;
+        position: relative;
+        left: 100px;
+        /* background-color: red; */ 
+        width: 70%;
+    }
+    
+    .left1 {
+        float: left; 
+       
+         
+      }
+      .left1 h2 {
+          margin-bottom: 2px;
+          color: blue;
+          font-size: 24px;
+          
+      }
+    
+      .left1 p {
+        position: relative;
+        top: 19px;
+        margin: 4px;
+        padding-bottom: 5px;
+        font-size: 20px;
+      }
+    
+      .left1 img {
+          padding: 10px;
+      }
+    
+      #gallery video {
+        object-fit: cover;
+        opacity: 0.9;
+      }
+    
+       .topic {
+         position: relative;
+        bottom: 170px;
+        left: 300px;
+       text-align: center;
+        /* background-color: blue; */
+        width: 50%;
+       
+      }
+    
+      .right {
+         position: relative;
+         left: 270px;
+         bottom: 3px;
+         font-size: 20px;
+       }
+    
+      table input,textarea {
+          padding: 10px;
+         border-radius: 10px;
+          width: 250px;
+         }
+    
+      table td {
+          padding-bottom: 10px;
+      }
+    
+      .right h2 {
+        margin-bottom: 20px;  
+        color:blue;
+        font-size: 20px;
+        text-decoration: underline;
+        
+      }
+    
+      .submit {
+        position: absolute;
+        left: 670px;
+        bottom:10px;
+      
+     
+      }
+    
+      .submit input {
+          text-decoration: none;
+          padding: 9px;
+          width: 100px;
+          color: white;
+          background-color: brown;
+          font-size: 17px;
+          border-radius: 10px 10px;
+         
+      }
+    
+     .lebron-footer {
+            background: linear-gradient(135deg, #552583 0%, #FDB927 100%);
+            color: white;
+            padding: 30px 0;
+            font-family: 'Arial', sans-serif;
+            border-top: 3px solid #FDB927;
         }
-        h1 {
-            color: #333;
+        
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0 20px;
         }
-        p {
+        
+        .footer-logo {
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .footer-logo h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .footer-logo h3 span {
+            color: #FDB927;
+        }
+        
+        .footer-logo p {
+            font-size: 14px;
+            line-height: 1.5;
+            opacity: 0.8;
+        }
+        
+        .footer-links {
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .footer-links h4 {
             font-size: 18px;
+            margin-bottom: 15px;
+            color: #FDB927;
         }
-    </style>
+        
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-links li {
+            margin-bottom: 8px;
+        }
+        
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: #FDB927;
+        }
+        
+        .footer-social {
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .footer-social h4 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #FDB927;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .social-icons a {
+            color: white;
+            background-color: rgba(255, 255, 255, 0.1);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+        }
+        
+        .social-icons a:hover {
+            background-color: #FDB927;
+            transform: translateY(-3px);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            margin-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            width: 100%;
+        }
+        
+        .footer-bottom p {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+        
+        .jersey-number {
+            font-weight: bold;
+            color: #FDB927;
+            font-size: 1.2em;
+        }
+        
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+                gap: 30px;
+            }
+        }
+</style>
 </head>
 <body>
+< IDD254
     <h1>Welcome to My Web Page</h1>
     <p>This is a sample HTML page with basic styling.</p>
 < IDD254
@@ -32,5 +440,141 @@
         <li>Contact</li>
     </ul>
 > Stella-wach
+=======
+<div class="container">
+
+    <section id="home">
+    
+    <div class="nav">
+        <nav>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT ME</a></li>
+                <li><a href="#gallery">GALLERY</a></li>
+               <li><a href="#contact">CONTACT ME</a></li>
+               
+            </ul>
+        </nav>
+   
+    </div>
+   
+        <div class="left">
+        <p>HELLO</p> 
+        <hr class="customline">
+        
+        <h1>I AM LEBRON JAMES.</h1>
+        <img src="images/Lebron james" alt="Lebron" height="400px">
+
+        <h3>PROFFESIONAL BASKETBALL PLAYER</h3>
+        
+ 
+ <div class="input">
+    <input type="submit" value="GET CV"> 
+    <input type="submit" value="MEET ME"> 
+</div>
+
+</section>
+
+     <section id="about">
+    
+        <fieldset>
+            <h1>ABOUT ME.</h1>
+           
+        
+            <div class="image1">
+        <img src="Images/Jameslakers.jpg" alt="Lebron" height="450px" width="450px">
+    </div>
+        <p>LeBron Raymone James Sr. (/ləbrɒn/;[1] lə-BRON; born December 30, 1984) is an American professional basketball player for the Los Angeles Lakers of the National Basketball Association (NBA). Nicknamed "King James", he is widely recognized as one of the greatest players in the sport's history and is often compared with Michael Jordan in debates on the greatest basketball player of all time.[a] James has won four NBA championships from 10 NBA Finals appearances, having made eight consecutive appearances between 2011 and 2018.[2] He also won the inaugural NBA Cup in 2023 with the Lakers and three Olympic gold medals as a member of the U.S. national team.
+        In addition to being the NBA's all-time leading scorer and ranking fourth in career assists, James holds several individual honors: four Most Valuable Player (MVP) Awards, four Finals MVP Awards, three All-Star Game MVP Awards, and the inaugural NBA Cup MVP award.</p>
+    
+            <div class="image2">
+        <a href="https://www.instagram.com/kingjames/"><img src="Images/Instagram.webp" alt="instagram" width="30px" height="20px"></a>
+        <a href="https://www.facebook.com/LeBron/"><img src="Images/Facebook.jpg" alt="Facebook" width="30px" height="20px"></a>
+        <a href="https://x.com/KingJames?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="Images/Twitter.jpg" alt="Twitter" width="30px" height="20pxp"></a>
+        <a href="https://www.linkedin.com/in/lebron-james-5b94b5334?trk=people-guest_people_search-card"><img src="Images/Linkedinn.jpg" alt="Linkedinn" width="30px" height="20px"></a>
+    </div>
+    </fieldset>
+    </section>   
+
+    <section id="contact">
+   
+        <div class="left1">
+           <h2>CONTACT ME</h2>
+          
+                   
+                  <p> <b>Address:</b> 123 Lebron James,Tokyo,Japan</p>
+                  <p><b>Email:</b> <a href="">support@james.com</a></p>
+                  <p> <b>Phone:</b> <a href="">+1 234 567 890</a></p>
+                 
+                  <a href="https://www.instagram.com/"><img src="Images/Instagram.webp" alt="instagram" width="30px" height="20px"></a>
+                 <a href="https://web.facebook.com/?_rdc=1&_rdr"><img src="Images/Facebook.jpg" alt="Facebook" width="30px" height="20px"></a>
+                 <a href="https://x.com/?lang=en"><img src="Images/Twitter.jpg" alt="Twitter" width="30px" height="20pxp"></a>
+                 <a href="https://ke.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F"><img src="Images/Linkedinn.jpg" alt="Linkedinn" width="30px" height="20px"></a>
+               </div>
+       
+               <div class="right">
+                   
+                   <form action="GET">
+                       
+                       <table>
+                           <h2>SEND ME A MESSAGE</h2>
+                           <tr><td>Full name</td></tr>
+                           <tr><td><input type="text" name="text" placeholder="Enter Full name"></td></tr>
+                           <tr><td>Email</td></tr>
+                           <tr><td><input type="email" name="email" placeholder="Enter Email"></td></tr>
+                           <tr><td>Subject</td></tr>
+                           <tr><td><input type="text" name="text" placeholder="Subject"></td></tr>
+                           <tr><td>Message</td></tr>
+                          <tr><td><textarea name="message" id="msg">Your message</textarea></td></tr> 
+       
+                         </table>
+       
+                         <div class="submit">
+                         <input type="submit" value="submit"> 
+                       </div>
+                   </form>
+        
+       
+       </section>
+
+   <footer class="lebron-footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h3>LEBRON <span>JAMES</span></h3>
+                <p>The King's legacy continues. More than an athlete - philanthropist, businessman, and cultural icon.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Career Stats</a></li>
+                    <li><a href="#">Championships</a></li>
+                    <li><a href="#">I PROMISE School</a></li>
+                    <li><a href="#">The Shop</a></li>
+                </ul>
+            </div>
+
+            <section id="footer">
+            
+            <div class="footer-social">
+                <h4>Follow The King</h4>
+                <div class="social-icons">
+                    <a href="https://twitter.com/KingJames" target="_blank" aria-label="Twitter">🐦</a>
+                    <a href="https://www.instagram.com/kingjames/" target="_blank" aria-label="Instagram">📷</a>
+                    <a href="https://www.facebook.com/LeBron" target="_blank" aria-label="Facebook">👍</a>
+                    <a href="https://www.youtube.com/user/LeBronJames" target="_blank" aria-label="YouTube">▶️</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> LeBron James Family Foundation. All Rights Reserved. | Jersey #<span class="jersey-number">23</span> <span class="jersey-number">6</span></p>
+            </div>
+        </div>
+    </footer>  
+</section>
+
+</div>
+
+> main
 </body>
 </html>

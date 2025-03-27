@@ -24,5 +24,80 @@
                 <source src="images/lebron jameds.mp4" type="video/mp4">
             </video>
     </section>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* General reset for margins and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Ensure the page takes full width */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Make the section responsive */
+        #gallery {
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* Style the title of the gallery */
+        .topic h1 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        /* Make the video container responsive */
+        .video {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Ensure the video takes full width, with max-height to avoid overflow */
+        .video video {
+            width: 100%;
+            max-width: 100%; /* Make sure video does not exceed its container */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        /* Media queries to adjust for smaller screens */
+        @media (max-width: 768px) {
+            .topic h1 {
+                font-size: 1.5rem; /* Smaller title for smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .topic h1 {
+                font-size: 1.2rem; /* Further decrease title size on very small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <section id="gallery">
+        <div class="topic">
+            <h1>GALLERY</h1>
+        </div>
+        <div class="video">
+            <video width="100%" height="auto" loop autoplay muted>
+                <source src="images/james.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+</body>
+</html>
+
 </body>
 </html>
